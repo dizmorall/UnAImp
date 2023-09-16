@@ -1,2 +1,2 @@
 # UnAImp
-Plagins for musicians
+Plugins for musicians
