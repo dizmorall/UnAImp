@@ -1,6 +1,5 @@
 # UnAImp   ![UnAImp](https://github.com/dizmorall/UnAImp/assets/144819653/72b0d21e-d586-4709-bd2a-eb87aca94eee)
 This is concept art, final product will vary
-Plugins for musicians
 # What is UnAImp?
 UnAImp is a plugin package for musicians with AI built into it. There will be several plugins that will be made for a specific task (For example: plugin for guitar signal processing, plugin for vocal processing).
 # How it will work?
