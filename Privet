@@ -4,7 +4,7 @@
 using namespace std;
 
 bool privet(const string& s) {
-    string hello = "hello";
+    string hell = "hello";
     int snomer = 0; // Индекс для строки s
     int hellonomer = 0; // Индекс для слова "hello"
 
