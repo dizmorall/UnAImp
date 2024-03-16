@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_ALL, "rus");
+    cout << "Введите n m a через пробел" << endl;
+    int n, m, a;
+    cin >> n >> m >> a;
+
+    // Количество плит по длине и ширине
+    long plitkaLength = ceil((double)n / a);
+    long plitkaWidth = ceil((double)m / a);
+
+    // Умножаю количество плит по длине на количество плит по ширине
+    long totalPlitka = plitkaLength * plitkaWidth;
+
+    cout << "Кол-во плит - " << totalPlitka << endl;
+
+    return 0;
+}
