@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool privet(const string& s) {
+    string hello = "hello";
+    int snomer = 0; // Индекс для строки s
+    int hellonomer = 0; // Индекс для слова "hello"
+
+    // Пока не прошлись по всей строке s и по всем символам слова "hello"
+    while (snomer < s.size() && hellonomer < hello.size()) {
+        // Если символы совпадают, двигаем оба указателя вперед
+        if (s[snomer] == hello[hellonomer]) {
+            snomer++;
+            hellonomer++;
+        }
+        else {
+            // Иначе двигаем только указатель по строке s вперед
+            snomer++;
+        }
+    }
+
+    // Если мы прошлись по всем символам слова "hello", значит удалось поздороваться
+    return hellonomer == hello.size();
+}
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    cout << "Сообщение Васи:\n";
+    string s;
+    cin >> s;
+
+    if (privet(s)) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+
+    return 0;
+}
